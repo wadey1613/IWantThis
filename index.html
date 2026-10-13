@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I Want This</title>
+<meta name="description" content="The family wish list. Add what you want, see what everyone else wants, and find the cheapest price.">
+<meta name="theme-color" content="#EBF0F1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1A1C" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="I Want This">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="gate"></div>
+<div id="shell" hidden>
+  <header class="top"><div class="top-in">
+    <div class="brand"></div>
+    <div id="me-slot"></div>
+  </div></header>
+  <main id="app"></main>
+  <nav class="tabs" aria-label="Sections"><div class="tabs-in">
+    <button class="tab" id="tab-mine" data-act="tab" data-tab="mine"></button>
+    <button class="tab" id="tab-family" data-act="tab" data-tab="family"></button>
+  </div></nav>
+</div>
+<div id="scrim" class="scrim" hidden><div id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title"></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p style="padding:24px;font-family:sans-serif">I Want This needs JavaScript switched on.</p></noscript>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
